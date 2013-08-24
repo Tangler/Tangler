@@ -1,0 +1,22 @@
+{
+    "name": "tangler/tangler",
+    "description": "Tangler core and commmand-line tools",
+    "homepage": "http://www.github.com/tangler/tangler",
+    "keywords": ["php", "tangler"],
+    "type": "library",
+    "minimum-stability": "dev" ,
+    "require": {
+        "symfony/console": "2.4.*@dev",
+        "phpunit/phpunit": "3.7.*@dev"
+    },
+    "require-dev": {
+        "sami/sami": "1.0.*@dev",
+        "squizlabs/php_codesniffer": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tangler\\": "src/"
+        }
+    },
+    "bin": ["bin/tangler-cli"]
+}

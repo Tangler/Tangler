@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Tangler\Core\ServiceList;
+
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    // directly used from ./bin/
+    require_once(__DIR__ . "/../vendor/autoload.php");
+} else {
+    // used from ./vendor/linkorb/transmogrifier/bin/
+    require_once(__DIR__ . "/../../../../vendor/autoload.php");
+}
+
+$services = array(
+    new Tangler\Service\File\Service()
+);
+
+
+$application = new Application('Tangler CLI tool', '1.0.0');
+$application->services = $services;
+$application->setCatchExceptions(true);
+$application->add(new \Tangler\Core\Command\ServiceListCommand());
+$application->add(new \Tangler\Core\Command\ServiceDescribeCommand());
+$application->run();

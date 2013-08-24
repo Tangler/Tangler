@@ -1,0 +1,14 @@
+<tangler>
+    <task>
+        <trigger key="demo.trigger.new_file">
+            <account>jf.twitter</account>
+            <field key="absolutepath">/tmp/demo.in/</field>
+        </trigger>
+        <action key="demo.trigger.new_file">
+            <account>jf.twitter</account>
+            <field key="absolutepath">/tmp/demo.out/</field>
+            <field key="filename">{{filename}}-{{filestamp}}.new</field>
+            <field key="content">Roflcopter! {{content}} {{filestamp}}</field>
+        </action>
+    </task>
+</tangler>
