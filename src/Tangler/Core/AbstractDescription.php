@@ -2,7 +2,7 @@
 
 namespace Tangler\Core;
 
-abstract class BaseDescription
+abstract class AbstractDescription
 {
     private $key;
     private $label;
