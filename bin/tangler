@@ -22,4 +22,5 @@ $application->services = $services;
 $application->setCatchExceptions(true);
 $application->add(new \Tangler\Core\Command\ServiceListCommand());
 $application->add(new \Tangler\Core\Command\ServiceDescribeCommand());
+$application->add(new \Tangler\Core\Command\RunFileCommand());
 $application->run();
