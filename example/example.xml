@@ -1,14 +1,34 @@
 <tangler>
-    <task>
-        <trigger key="demo.trigger.new_file">
-            <account>jf.twitter</account>
-            <field key="absolutepath">/tmp/demo.in/</field>
+    <channel>
+        <key>file_mover_01</key>
+        <label>Move files around</label>
+        <description>It moves stuff...</description>
+
+        <trigger class="Tangler\Service\File\NewFileTrigger">
+            <parameter key="dir">/tmp/demo.in/</parameter>
         </trigger>
-        <action key="demo.trigger.new_file">
-            <account>jf.twitter</account>
-            <field key="absolutepath">/tmp/demo.out/</field>
-            <field key="filename">{{filename}}-{{filestamp}}.new</field>
-            <field key="content">Roflcopter! {{content}} {{filestamp}}</field>
+        
+        <action class="Tangler\Service\File\CreateFileAction">
+            <parameter key="dir">/tmp/demo.out/</parameter>
+            <parameter key="filename">new.{{filename}}.bin</parameter>
+            <parameter key="content">Spotted new file: '{{filename}}'
+{{content}}
+The end</parameter>
         </action>
-    </task>
+
+        <action class="Tangler\Service\Smtp\SendEmailAction">
+            <parameter key="smtp.host">mail.example.web</parameter>
+            <parameter key="smtp.username">myusername</parameter>
+            <parameter key="smtp.password">mypassword</parameter>
+            <parameter key="subject">New file: {{filename}}</parameter>
+            <parameter key="from">tangler@example.web</parameter>
+            <parameter key="to">me@example.web</parameter>
+            <parameter key="body">Hey, this is Tangler,
+I spotted a new file: '{{filename}}':
+{{content}}
+Kind regards,
+Tangler
+</parameter>
+        </action>        
+    </channel>
 </tangler>
