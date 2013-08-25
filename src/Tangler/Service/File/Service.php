@@ -2,10 +2,10 @@
 
 namespace Tangler\Service\File;
 
-use Tangler\Core\BaseService;
+use Tangler\Core\AbstractService;
 use Tangler\Core\Interfaces\ServiceInterface;
 
-class Service extends BaseService implements ServiceInterface
+class Service extends AbstractService implements ServiceInterface
 {
     public function init()
     {
@@ -19,7 +19,7 @@ class Service extends BaseService implements ServiceInterface
         ));
 
         $this->setActions(array(
-            new \Tangler\Service\File\NewFileAction()
+            new \Tangler\Service\File\CreateFileAction()
         ));
     }
 }
