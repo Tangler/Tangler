@@ -2,16 +2,16 @@
 
 namespace Tangler\Core;
 
-use Tangler\Core\Interfaces\ServiceInterface;
+use Tangler\Core\Interfaces\ModuleInterface;
 
-class ServiceList
+class ModuleList
 {
     private static $instance;
 
     public static function getInstance()
     {
         if (!self::$instance) {
-            self::$instance = new ServiceList();
+            self::$instance = new ModuleList();
         }
         return self::$instance;
     }

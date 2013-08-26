@@ -13,14 +13,15 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
 }
 
 $services = array(
-    new Tangler\Service\File\Service()
+    new Tangler\Module\File\Module(),
+    new Tangler\Module\Smtp\Module()
 );
 
 
 $application = new Application('Tangler CLI tool', '1.0.0');
 $application->services = $services;
 $application->setCatchExceptions(true);
-$application->add(new \Tangler\Core\Command\ServiceListCommand());
-$application->add(new \Tangler\Core\Command\ServiceDescribeCommand());
+$application->add(new \Tangler\Core\Command\ModuleListCommand());
+$application->add(new \Tangler\Core\Command\ModuleDescribeCommand());
 $application->add(new \Tangler\Core\Command\RunFileCommand());
 $application->run();

@@ -8,17 +8,17 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class ServiceDescribeCommand extends Command
+class ModuleDescribeCommand extends Command
 {
     protected function configure()
     {
         $this
-            ->setName('service:describe')
-            ->setDescription('Output service description')
+            ->setName('module:describe')
+            ->setDescription('Output module description')
             ->addArgument(
-                'servicekey',
+                'modulekey',
                 InputArgument::REQUIRED,
-                'Key of the service'
+                'Key of the module'
             )
         ;
     }
@@ -26,18 +26,18 @@ class ServiceDescribeCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $key = $input->getArgument('servicekey');
-        $services = $this->getApplication()->services;
-        foreach ($services as $service) {
-            if ($service->getKey() == $key) {
-                $this->describeService($service, $output);
+        $key = $input->getArgument('modulekey');
+        $modules = $this->getApplication()->modules;
+        foreach ($modules as $module) {
+            if ($module->getKey() == $key) {
+                $this->describeService($module, $output);
             }
         }
 
     }
 
-    private function describeService($service, $output)
+    private function describeService($module, $output)
     {
-        print_r($service);
+        print_r($module);
     }
 }

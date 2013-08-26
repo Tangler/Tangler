@@ -8,22 +8,22 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class ServiceListCommand extends Command
+class ModuleListCommand extends Command
 {
     protected function configure()
     {
         $this
-            ->setName('service:list')
-            ->setDescription('List available services')
+            ->setName('module:list')
+            ->setDescription('List available modules')
         ;
     }
 
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $services = $this->getApplication()->services;
-        foreach ($services as $service) {
-            echo $service->getKey() . ":" . $service->getLabel() . "\n";
+        $modules = $this->getApplication()->modules;
+        foreach ($modules as $module) {
+            echo $module->getKey() . ":" . $module->getLabel() . "\n";
         }
     }
 }

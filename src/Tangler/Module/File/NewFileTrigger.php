@@ -1,6 +1,6 @@
 <?php
 
-namespace Tangler\Service\File;
+namespace Tangler\Module\File;
 
 use Tangler\Core\Interfaces\TriggerInterface;
 use Tangler\Core\AbstractTrigger;

@@ -2,7 +2,7 @@
 
 namespace Tangler\Core;
 
-abstract class AbstractService extends AbstractDescription
+abstract class AbstractModule extends AbstractDescription
 {
     private $accounttype;
 

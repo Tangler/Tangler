@@ -29,7 +29,7 @@ class RunFileCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $services = $this->getApplication()->services;
+        $modules = $this->getApplication()->modules;
 
         $tangler = new Tangler();
         $loader = new TanglerLoader();

@@ -4,11 +4,11 @@
         <label>Move files around</label>
         <description>It moves stuff...</description>
 
-        <trigger class="Tangler\Service\File\NewFileTrigger">
+        <trigger class="Tangler\Module\File\NewFileTrigger">
             <parameter key="dir">/tmp/demo.in/</parameter>
         </trigger>
-        
-        <action class="Tangler\Service\File\CreateFileAction">
+
+        <action class="Tangler\Module\File\CreateFileAction">
             <parameter key="dir">/tmp/demo.out/</parameter>
             <parameter key="filename">new.{{filename}}.bin</parameter>
             <parameter key="content">Spotted new file: '{{filename}}'
@@ -16,7 +16,7 @@
 The end</parameter>
         </action>
 
-        <action class="Tangler\Service\Smtp\SendEmailAction">
+        <action class="Tangler\Module\Smtp\SendEmailAction">
             <parameter key="smtp.host">mail.example.web</parameter>
             <parameter key="smtp.username">myusername</parameter>
             <parameter key="smtp.password">mypassword</parameter>

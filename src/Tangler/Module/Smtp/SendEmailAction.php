@@ -1,6 +1,6 @@
 <?php
 
-namespace Tangler\Service\Smtp;
+namespace Tangler\Module\Smtp;
 
 use Tangler\Core\Interfaces\ActionInterface;
 use Tangler\Core\AbstractAction;
