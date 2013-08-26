@@ -7,8 +7,7 @@
     "minimum-stability": "dev" ,
     "require": {
         "symfony/console": "2.4.*@dev",
-        "phpunit/phpunit": "3.7.*@dev",
-        "swiftmailer/swiftmailer": "5.1.*@dev"
+        "phpunit/phpunit": "3.7.*@dev"
     },
     "require-dev": {
         "sami/sami": "1.0.*@dev",
@@ -19,5 +18,5 @@
             "Tangler\\": "src/"
         }
     },
-    "bin": ["bin/tangler-cli"]
+    "bin": ["bin/tangler"]
 }
