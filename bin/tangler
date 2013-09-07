@@ -12,8 +12,6 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
     require_once(__DIR__ . "/../../../../vendor/autoload.php");
 }
 
-
-
 $application = new Application('Tangler CLI tool', '1.0.0');
 $application->setCatchExceptions(true);
 $application->add(new \Tangler\Core\Command\ModuleListCommand());
