@@ -8,7 +8,7 @@ use Tangler\Core\AbstractTrigger;
 
 class NewFileTrigger extends AbstractTrigger implements TriggerInterface
 {
-    public function Init()
+    public function init()
     {
         $this->setKey('new_file');
         $this->setLabel('New file trigger');
@@ -22,7 +22,7 @@ class NewFileTrigger extends AbstractTrigger implements TriggerInterface
     }
 
 
-    public function Poll($channel)
+    public function poll($channel)
     {
         $dir = $this->parameter->getValue('dir');
         echo "POLLING FOR NEW FILES in [" . $dir . "]\n";

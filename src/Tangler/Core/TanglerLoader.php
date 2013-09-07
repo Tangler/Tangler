@@ -13,6 +13,15 @@ class TanglerLoader
         //TODO: Sanity checks
         $data = file_get_contents($filename);
         $xml = $movies = new SimpleXMLElement($data);
+ 
+        foreach($xml->autoload as $autoloadnode)
+        {
+            $prefix = (string)$autoloadnode['prefix'];
+            $path = (string)$autoloadnode['path'];
+
+            echo "Adding autoload prefix: " . $prefix . ' (' . $path . ')' . "\n";
+            $tangler->getAutoloader()->add($prefix, $path);
+        }
         
         $registry = null;
         foreach($xml->registry as $registrynode)

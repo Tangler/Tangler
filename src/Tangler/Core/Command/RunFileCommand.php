@@ -29,9 +29,9 @@ class RunFileCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $modules = $this->getApplication()->modules;
-
         $tangler = new Tangler();
+        $tangler->setAutoloader($this->getApplication()->autoloader);
+
         $loader = new TanglerLoader();
 
         $filename = $input->getArgument('filename');
