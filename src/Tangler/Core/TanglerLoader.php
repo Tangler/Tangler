@@ -13,6 +13,31 @@ class TanglerLoader
         //TODO: Sanity checks
         $data = file_get_contents($filename);
         $xml = $movies = new SimpleXMLElement($data);
+        
+        $registry = null;
+        foreach($xml->registry as $registrynode)
+        {
+            $classname = (string)$registrynode['class'];
+            $registry = new $classname();
+            $parameters = array();
+            foreach ($registrynode->parameter as $parameternode) {
+                $key = (string)$parameternode['key'];
+                $value = (string)$parameternode;
+
+                $parameters[$key]=$value;
+            }
+            $registry->init($parameters);
+        }
+
+        if (!$registry) {
+            $sqlitefilename = 'tangler.sqlite3';
+            // [, int $mode = 0666 [, string &$error_message ]] )
+            $parameters=array();
+            $parameters['dsn']='sqlite:' . $sqlitefilename;
+            $registry = new \Tangler\Core\PdoRegistry();
+            $registry->init($parameters);
+        }
+
         foreach ($xml->channel as $channelnode) {
             $channel = new Channel();
             $channel->setKey((string)$channelnode->key);
@@ -22,6 +47,7 @@ class TanglerLoader
             foreach($channelnode->trigger as $triggernode) {
                 $classname = (string)$triggernode['class'];
                 $trigger = new $classname();
+                $trigger->setRegistry($registry);
 
                 foreach ($triggernode->parameter as $parameternode) {
                     $key = (string)$parameternode['key'];

@@ -34,14 +34,21 @@ class NewFileTrigger extends AbstractTrigger implements TriggerInterface
             while (($file = readdir($dh)) !== false) {
                 if (is_file($dir . $file)) {
 
-                    $content = file_get_contents($dir . $file);
-                    $this->output->setValue('filename', $file);
-                    $this->output->setValue('content', $content);
-                    unlink($dir . $file);
+                    $stamp = filemtime($dir . $file);
+                    $key = $file . ':' . $stamp;
+                    if (!$this->isProcessed($key)) {
+                        $content = file_get_contents($dir . $file);
+                        $this->output->setValue('filename', $file);
+                        $this->output->setValue('content', $content);
+                        //unlink($dir . $file);
 
-                    foreach($channel->getActions() as $action) {
-                        $action->Run($this->output);
+                        foreach($channel->getActions() as $action) {
+                            $action->Run($this->output);
+                        }
+                        $this->setProcessed($key);
                     }
+
+                    
 
                 }
             }

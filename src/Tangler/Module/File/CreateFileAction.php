@@ -23,7 +23,8 @@ class CreateFileAction extends AbstractAction implements ActionInterface
         $content = $this->resolveParameter('content', $input);
         $filename = $this->resolveParameter('filename', $input);
         $dir = $this->resolveParameter('dir', $input);
-        echo "\n### CreateFileAction: [$dir] " . $filename . "\n$content\n";
+        echo "\n### CreateFileAction: [$dir] " . $filename;
+        // . "\n$content\n";
         file_put_contents($dir . $filename, $content);
     }
 }
