@@ -45,6 +45,11 @@ class ParameterBag
         } else {
             throw new \InvalidArgumentException('Parameter does not exist in bag (getParameter): ' . $key);
         }
-    }    
+    }   
+
+    public function getAll()
+    {
+        return $this->parameter;
+    }     
 
 }

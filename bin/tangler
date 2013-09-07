@@ -17,5 +17,6 @@ $application->setCatchExceptions(true);
 $application->autoloader = $autoloader;
 $application->add(new \Tangler\Core\Command\ModuleListCommand());
 $application->add(new \Tangler\Core\Command\ModuleDescribeCommand());
+$application->add(new \Tangler\Core\Command\DocumentationGenerateCommand());
 $application->add(new \Tangler\Core\Command\RunFileCommand());
 $application->run();
