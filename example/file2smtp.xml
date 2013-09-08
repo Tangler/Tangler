@@ -1,0 +1,31 @@
+<tangler>
+    <channel>
+        <key>file2smtp</key>
+        <label>Send all new files in a given directory by email</label>
+        <description>
+            Monitors the source directory for new files. 
+            When new files are detected, they are sent through smtp to the provided email address.
+        </description>
+
+        <!-- configure the trigger and it's parameters -->
+        <trigger class="Tangler\Module\File\NewFileTrigger">
+            <parameter key="dir">/tmp/demo.in/</parameter>
+        </trigger>
+
+        <!-- configure the action and it's parameters, using variables provided by the trigger -->
+        <action class="Tangler\Module\Smtp\SendEmailAction">
+            <parameter key="smtp.host">mail.example.web</parameter>
+            <parameter key="smtp.username">myusername</parameter>
+            <parameter key="smtp.password">mypassword</parameter>
+            <parameter key="subject">New file: {{filename}}</parameter>
+            <parameter key="from">tangler@example.web</parameter>
+            <parameter key="to">me@example.web</parameter>
+            <parameter key="body">Hey, this is Tangler,
+I spotted a new file: '{{filename}}':
+{{content}}
+Kind regards,
+Tangler
+</parameter>
+        </action>        
+    </channel>
+</tangler>

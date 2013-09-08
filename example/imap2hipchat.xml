@@ -1,0 +1,21 @@
+<tangler>
+     <channel>
+        <key>imap2hipchat</key>
+        <label>IMAP to HipChat</label>
+        <description>Send HipChat messages when new e-mail arrives</description>
+
+        <trigger class="Tangler\Module\Imap\NewEmailTrigger">
+            <parameter key="username">username</parameter>
+            <parameter key="password">password</parameter>
+            <parameter key="hostname">imap.example.com</parameter>
+        </trigger>
+        
+        <action class="Tangler\Module\HipChat\SendMessageAction">
+            <parameter key="apitoken">apitoken</parameter>
+            <parameter key="roomid">roomid</parameter>
+            <parameter key="fromname">Tangler</parameter>
+            <parameter key="message">New email: '{{subject}}' from {{fromname}} ({{fromemail}})</parameter>
+        </action>
+
+    </channel>
+</tangler>

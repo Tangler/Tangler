@@ -3,8 +3,143 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c877ad1816da90de60d716e40e4b4aab",
+    "hash": "31ba4c5cb115ff0884012b23590158b9",
     "packages": [
+        {
+            "name": "dropbox/dropbox-sdk",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dropbox/dropbox-sdk-php.git",
+                "reference": "dce57e4f5e50a23e497e9e8db647839d404ee0b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/dce57e4f5e50a23e497e9e8db647839d404ee0b8",
+                "reference": "dce57e4f5e50a23e497e9e8db647839d404ee0b8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">= 5.3"
+            },
+            "require-dev": {
+                "apigen/apigen": "2.8.1",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Dropbox": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Dropbox SDK for PHP",
+            "keywords": [
+                "dropbox"
+            ],
+            "time": "2013-08-22 02:38:03"
+        },
+        {
+            "name": "linkorb/mollie-sms-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/linkorb/mollie-sms-php.git",
+                "reference": "0957017027505fd0ae751edaa77b3c55f0248717"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/linkorb/mollie-sms-php/zipball/0957017027505fd0ae751edaa77b3c55f0248717",
+                "reference": "0957017027505fd0ae751edaa77b3c55f0248717",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Joost Faassen",
+                    "email": "j.faassen@linkorb.com",
+                    "role": "Packaging for composer"
+                },
+                {
+                    "name": "Laurens van Alphen",
+                    "email": "info@keenondots.com",
+                    "role": "Thanks to"
+                },
+                {
+                    "name": "Mollie B.V.",
+                    "email": "info@mollie.nl",
+                    "role": "Source files"
+                }
+            ],
+            "description": "Mollie SMS PHP API Repository. Composer-ready.",
+            "homepage": "http://www.github.com/linkorb/transip-php",
+            "keywords": [
+                "api",
+                "mollie",
+                "php",
+                "sms"
+            ],
+            "time": "2013-03-15 19:20:52"
+        },
+        {
+            "name": "linkorb/pushover",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/linkorb/pushover.git",
+                "reference": "8318d00d1d0e1dced6abef6cfc15d5f3d1231f17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/linkorb/pushover/zipball/8318d00d1d0e1dced6abef6cfc15d5f3d1231f17",
+                "reference": "8318d00d1d0e1dced6abef6cfc15d5f3d1231f17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "LinkORB\\Pushover\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joost Faassen",
+                    "email": "j.faassen@linkorb.com",
+                    "role": "Development"
+                }
+            ],
+            "description": "Pushover library for PHP applications",
+            "homepage": "http://www.github.com/linkorb/pushover",
+            "keywords": [
+                "api",
+                "php",
+                "pushover"
+            ],
+            "time": "2013-03-19 21:21:42"
+        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.x-dev",
@@ -205,12 +340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "1.2.0"
+                "reference": "31babf400e5b5868573bf49a000a3519d3978233"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/1.2.0",
-                "reference": "1.2.0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/31babf400e5b5868573bf49a000a3519d3978233",
+                "reference": "31babf400e5b5868573bf49a000a3519d3978233",
                 "shasum": ""
             },
             "require": {
@@ -255,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b6b697a7a45e27f6d4e943deb4cc187031105907"
+                "reference": "cdf0a1b7be9638bd887a3ead16e13acb510ed46b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b6b697a7a45e27f6d4e943deb4cc187031105907",
-                "reference": "b6b697a7a45e27f6d4e943deb4cc187031105907",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cdf0a1b7be9638bd887a3ead16e13acb510ed46b",
+                "reference": "cdf0a1b7be9638bd887a3ead16e13acb510ed46b",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +456,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-08-25 12:31:49"
+            "time": "2013-09-03 05:44:50"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -387,12 +522,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "391268c7489fb0f771689c0085ca13db3f105042"
+                "reference": "3a3d6fb82ada8e1afd5c5fd8b59ced46b8b9253e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/391268c7489fb0f771689c0085ca13db3f105042",
-                "reference": "391268c7489fb0f771689c0085ca13db3f105042",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/3a3d6fb82ada8e1afd5c5fd8b59ced46b8b9253e",
+                "reference": "3a3d6fb82ada8e1afd5c5fd8b59ced46b8b9253e",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +563,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-07-25 16:57:42"
+            "time": "2013-09-03 16:50:29"
         },
         {
             "name": "symfony/console",
@@ -437,12 +572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "8f04af088451aa787e8c2433aa8174f2a0e10b4b"
+                "reference": "148bbb43845296e288744543d1ff86e54e257657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/8f04af088451aa787e8c2433aa8174f2a0e10b4b",
-                "reference": "8f04af088451aa787e8c2433aa8174f2a0e10b4b",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/148bbb43845296e288744543d1ff86e54e257657",
+                "reference": "148bbb43845296e288744543d1ff86e54e257657",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +616,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-08-23 15:27:50"
+            "time": "2013-09-07 16:46:00"
         },
         {
             "name": "symfony/yaml",
@@ -490,12 +625,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "d717edb3fedd370baa5e2237641680d611d1c6a9"
+                "reference": "6286e95889e326311ff90ae4f96ddc15d6db2c39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/d717edb3fedd370baa5e2237641680d611d1c6a9",
-                "reference": "d717edb3fedd370baa5e2237641680d611d1c6a9",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6286e95889e326311ff90ae4f96ddc15d6db2c39",
+                "reference": "6286e95889e326311ff90ae4f96ddc15d6db2c39",
                 "shasum": ""
             },
             "require": {
@@ -528,477 +663,419 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-08-23 15:14:52"
-        }
-    ],
-    "packages-dev": [
-        {
-            "name": "dflydev/markdown",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dflydev/dflydev-markdown.git",
-                "reference": "11f8faa2d17f717a038b4d372abd22a6ac4a15dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-markdown/zipball/11f8faa2d17f717a038b4d372abd22a6ac4a15dc",
-                "reference": "11f8faa2d17f717a038b4d372abd22a6ac4a15dc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "dflydev\\markdown": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dragonfly Development Inc.",
-                    "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
-                },
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
-                },
-                {
-                    "name": "Michel Fortin",
-                    "homepage": "http://michelf.com"
-                },
-                {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net"
-                }
-            ],
-            "description": "PHP Markdown & Extra",
-            "homepage": "http://github.com/dflydev/dflydev-markdown",
-            "keywords": [
-                "markdown"
-            ],
-            "time": "2012-07-15 16:31:27"
+            "time": "2013-08-29 06:54:01"
         },
         {
-            "name": "nikic/php-parser",
+            "name": "tangler/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "3d467ca18ec08c5df2d5cad5c51442be148a7f21"
+                "url": "https://github.com/Tangler/Core.git",
+                "reference": "f2c6a414ac085ecd147163dfd5ca3d18861c7a98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3d467ca18ec08c5df2d5cad5c51442be148a7f21",
-                "reference": "3d467ca18ec08c5df2d5cad5c51442be148a7f21",
+                "url": "https://api.github.com/repos/Tangler/Core/zipball/f2c6a414ac085ecd147163dfd5ca3d18861c7a98",
+                "reference": "f2c6a414ac085ecd147163dfd5ca3d18861c7a98",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2"
+                "phpunit/phpunit": "3.7.*@dev",
+                "symfony/console": "2.4.*@dev"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "PHPParser": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov"
-                }
-            ],
-            "description": "A PHP parser written in PHP",
-            "keywords": [
-                "parser",
-                "php"
-            ],
-            "time": "2013-08-04 14:15:12"
-        },
-        {
-            "name": "pimple/pimple",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Pimple.git",
-                "reference": "ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94",
-                "reference": "ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
-            "homepage": "http://pimple.sensiolabs.org",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "time": "2013-03-08 08:21:40"
-        },
-        {
-            "name": "sami/sami",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Sami.git",
-                "reference": "cc3bcaf63a87378957921f10d3ef16c493f2c5c7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Sami/zipball/cc3bcaf63a87378957921f10d3ef16c493f2c5c7",
-                "reference": "cc3bcaf63a87378957921f10d3ef16c493f2c5c7",
-                "shasum": ""
-            },
-            "require": {
-                "dflydev/markdown": "1.0.*",
-                "nikic/php-parser": "0.9.*",
-                "php": ">=5.3.0",
-                "pimple/pimple": "1.0.*",
-                "symfony/console": "~2.1",
-                "symfony/filesystem": "~2.1",
-                "symfony/finder": "~2.1",
-                "symfony/process": "~2.1",
-                "symfony/yaml": "~2.1",
-                "twig/twig": "1.*"
+            "require-dev": {
+                "sami/sami": "1.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master"
             },
             "bin": [
-                "sami.php"
+                "bin/tangler"
             ],
-            "type": "application",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
+            "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Sami": "."
+                    "Tangler\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Sami, an API documentation generator",
-            "homepage": "http://sami.sensiolabs.org",
+            "description": "Tangler core and commmand-line tools",
+            "homepage": "http://www.github.com/tangler/core",
             "keywords": [
-                "phpdoc"
+                "core",
+                "php",
+                "tangler"
             ],
-            "time": "2013-08-04 15:19:13"
+            "time": "2013-09-08 08:50:14"
         },
         {
-            "name": "squizlabs/php_codesniffer",
+            "name": "tangler/dropbox",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "12a1ec7ab9f362b85a3e5d5717dbc807e98e1d2b"
+                "url": "https://github.com/tangler/dropbox.git",
+                "reference": "834bbf63f75d8c2827f87f03477d890216d6e174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/12a1ec7ab9f362b85a3e5d5717dbc807e98e1d2b",
-                "reference": "12a1ec7ab9f362b85a3e5d5717dbc807e98e1d2b",
+                "url": "https://api.github.com/repos/tangler/dropbox/zipball/834bbf63f75d8c2827f87f03477d890216d6e174",
+                "reference": "834bbf63f75d8c2827f87f03477d890216d6e174",
                 "shasum": ""
             },
             "require": {
-                "ext-tokenizer": "*",
-                "php": ">=5.1.2"
+                "dropbox/dropbox-sdk": "1.1.*",
+                "phpunit/phpunit": "3.7.*@dev",
+                "symfony/console": "2.4.*@dev",
+                "tangler/tangler": "dev-master"
             },
-            "suggest": {
-                "phpunit/php-timer": "dev-master"
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
             },
-            "bin": [
-                "scripts/phpcs"
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Dropbox Module for Tangler",
+            "homepage": "http://www.github.com/Tangler/Dropbox",
+            "keywords": [
+                "action",
+                "dropbox",
+                "php",
+                "tangler",
+                "trigger"
             ],
+            "time": "2013-09-08 07:37:38"
+        },
+        {
+            "name": "tangler/file",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/File.git",
+                "reference": "eede270bf7d3f8c59cba5de514a1f2ea841b273a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/File/zipball/eede270bf7d3f8c59cba5de514a1f2ea841b273a",
+                "reference": "eede270bf7d3f8c59cba5de514a1f2ea841b273a",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "3.7.*@dev",
+                "tangler/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "File Module for Tangler",
+            "homepage": "http://www.github.com/tangler/file",
+            "keywords": [
+                "action",
+                "file",
+                "php",
+                "tangler",
+                "trigger"
+            ],
+            "time": "2013-09-08 08:58:40"
+        },
+        {
+            "name": "tangler/imap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/Imap.git",
+                "reference": "e3b9c814c95b33853e263e0c8e9220f147284e5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/Imap/zipball/e3b9c814c95b33853e263e0c8e9220f147284e5c",
+                "reference": "e3b9c814c95b33853e263e0c8e9220f147284e5c",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "3.7.*@dev",
+                "symfony/console": "2.4.*@dev",
+                "tangler/tangler": "dev-master",
+                "zetacomponents/mail": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "IMAP Module for Tangler",
+            "homepage": "http://www.github.com/Tangler/Imap",
+            "keywords": [
+                "email",
+                "imap",
+                "php",
+                "tangler",
+                "trigger"
+            ],
+            "time": "2013-09-07 18:53:20"
+        },
+        {
+            "name": "tangler/mollie",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/Mollie.git",
+                "reference": "a6a34b4ffd2e1bc818dc29c82410184d2ce8e46e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/Mollie/zipball/a6a34b4ffd2e1bc818dc29c82410184d2ce8e46e",
+                "reference": "a6a34b4ffd2e1bc818dc29c82410184d2ce8e46e",
+                "shasum": ""
+            },
+            "require": {
+                "linkorb/mollie-sms-php": "dev-master",
+                "phpunit/phpunit": "3.7.*@dev",
+                "symfony/console": "2.4.*@dev",
+                "tangler/tangler": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Mollie Module for Tangler",
+            "homepage": "http://www.github.com/Tangler/Mollie",
+            "keywords": [
+                "action",
+                "mobile",
+                "mollie",
+                "notification",
+                "php",
+                "sms",
+                "tangler"
+            ],
+            "time": "2013-09-07 20:32:33"
+        },
+        {
+            "name": "tangler/pushover",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/Pushover.git",
+                "reference": "4f32854ddb94414caae748348d3ac4a3b74f7849"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/Pushover/zipball/4f32854ddb94414caae748348d3ac4a3b74f7849",
+                "reference": "4f32854ddb94414caae748348d3ac4a3b74f7849",
+                "shasum": ""
+            },
+            "require": {
+                "linkorb/pushover": "1.*",
+                "phpunit/phpunit": "3.7.*@dev",
+                "symfony/console": "2.4.*@dev",
+                "tangler/tangler": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Pushover Module for Tangler",
+            "homepage": "http://www.github.com/Tangler/Imap",
+            "keywords": [
+                "action",
+                "mobile",
+                "notification",
+                "php",
+                "pushover",
+                "tangler"
+            ],
+            "time": "2013-09-07 19:49:28"
+        },
+        {
+            "name": "tangler/smtp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/Smtp.git",
+                "reference": "ceba02b77383a68f439f1d6173954afb80884613"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/Smtp/zipball/ceba02b77383a68f439f1d6173954afb80884613",
+                "reference": "ceba02b77383a68f439f1d6173954afb80884613",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "3.7.*@dev",
+                "swiftmailer/swiftmailer": "5.1.*@dev",
+                "symfony/console": "2.4.*@dev",
+                "tangler/tangler": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "SMTP Module for Tangler (Using SwiftMailer)",
+            "homepage": "http://www.github.com/Tangler/Smtp",
+            "keywords": [
+                "php",
+                "smtp",
+                "swift",
+                "swiftmailer",
+                "tangler"
+            ],
+            "time": "2013-09-07 18:52:56"
+        },
+        {
+            "name": "zetacomponents/base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Base.git",
+                "reference": "642f63a8a72c32996f1aaf8a317fdf746bc32ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Base/zipball/642f63a8a72c32996f1aaf8a317fdf746bc32ce7",
+                "reference": "642f63a8a72c32996f1aaf8a317fdf746bc32ce7",
+                "shasum": ""
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "CodeSniffer.php",
-                    "CodeSniffer/CLI.php",
-                    "CodeSniffer/Exception.php",
-                    "CodeSniffer/File.php",
-                    "CodeSniffer/MultiFileSniff.php",
-                    "CodeSniffer/Report.php",
-                    "CodeSniffer/Reporting.php",
-                    "CodeSniffer/Sniff.php",
-                    "CodeSniffer/Tokens.php",
-                    "CodeSniffer/Reports/",
-                    "CodeSniffer/CommentParser/",
-                    "CodeSniffer/Tokenizers/",
-                    "CodeSniffer/DocGenerators/",
-                    "CodeSniffer/Standards/AbstractPatternSniff.php",
-                    "CodeSniffer/Standards/AbstractScopeSniff.php",
-                    "CodeSniffer/Standards/AbstractVariableSniff.php",
-                    "CodeSniffer/Standards/IncorrectPatternException.php",
-                    "CodeSniffer/Standards/Generic/Sniffs/",
-                    "CodeSniffer/Standards/MySource/Sniffs/",
-                    "CodeSniffer/Standards/PEAR/Sniffs/",
-                    "CodeSniffer/Standards/PSR1/Sniffs/",
-                    "CodeSniffer/Standards/PSR2/Sniffs/",
-                    "CodeSniffer/Standards/Squiz/Sniffs/",
-                    "CodeSniffer/Standards/Zend/Sniffs/"
+                    "src"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "Apache-2.0"
             ],
             "authors": [
                 {
-                    "name": "Greg Sherwood",
-                    "role": "lead"
-                }
-            ],
-            "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
-            "keywords": [
-                "phpcs",
-                "standards"
-            ],
-            "time": "2013-08-23 00:23:44"
-        },
-        {
-            "name": "symfony/filesystem",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Filesystem",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "da0dcf60b7307f68667fecef8ccbb2b070bda7cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/da0dcf60b7307f68667fecef8ccbb2b070bda7cf",
-                "reference": "da0dcf60b7307f68667fecef8ccbb2b070bda7cf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Sergey Alexeev"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Filesystem Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-08-09 07:26:54"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Finder",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Finder.git",
-                "reference": "16903d637cdce58c122b8b6e9b271170953d2996"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/16903d637cdce58c122b8b6e9b271170953d2996",
-                "reference": "16903d637cdce58c122b8b6e9b271170953d2996",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Finder\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Sebastian Bergmann"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-08-14 13:08:25"
-        },
-        {
-            "name": "symfony/process",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Process",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Process.git",
-                "reference": "749fe18eae6d47c1356163e7e89f5618d7dc42a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/749fe18eae6d47c1356163e7e89f5618d7dc42a3",
-                "reference": "749fe18eae6d47c1356163e7e89f5618d7dc42a3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Process\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Jan Borsodi"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
                 }
             ],
-            "description": "Symfony Process Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-08-24 06:54:37"
+            "description": "The Base package provides the basic infrastructure that all packages rely on. Therefore every component relies on this package.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2012-05-21 11:21:36"
         },
         {
-            "name": "twig/twig",
+            "name": "zetacomponents/mail",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Twig.git",
-                "reference": "fcf007e9a2e6c65594360ae7fa3c410ae8d56a11"
+                "url": "https://github.com/zetacomponents/Mail.git",
+                "reference": "fc9f9e2b8a364279dbae51d82618b21b0e7cc3a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/fcf007e9a2e6c65594360ae7fa3c410ae8d56a11",
-                "reference": "fcf007e9a2e6c65594360ae7fa3c410ae8d56a11",
+                "url": "https://api.github.com/repos/zetacomponents/Mail/zipball/fc9f9e2b8a364279dbae51d82618b21b0e7cc3a6",
+                "reference": "fc9f9e2b8a364279dbae51d82618b21b0e7cc3a6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "zetacomponents/base": "*"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.14-dev"
-                }
-            },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                }
+                "classmap": [
+                    "src"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "Apache-2.0"
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Sergey Alexeev"
                 },
                 {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "Sinisa Dukaric"
+                },
+                {
+                    "name": "Mikko Koppanen"
+                },
+                {
+                    "name": "Christian Michel"
                 }
             ],
-            "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
-            "keywords": [
-                "templating"
-            ],
-            "time": "2013-08-07 12:53:34"
+            "description": "The component allows you construct and/or parse Mail messages conforming to  the mail standard. It has support for attachments, multipart messages and HTML  mail. It also interfaces with SMTP to send mail or IMAP, POP3 or mbox to  retrieve e-mail.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2013-07-24 15:29:24"
         }
+    ],
+    "packages-dev": [
+
     ],
     "aliases": [
 
@@ -1007,9 +1084,13 @@
     "stability-flags": {
         "symfony/console": 20,
         "phpunit/phpunit": 20,
-        "swiftmailer/swiftmailer": 20,
-        "sami/sami": 20,
-        "squizlabs/php_codesniffer": 20
+        "tangler/core": 20,
+        "tangler/file": 20,
+        "tangler/smtp": 20,
+        "tangler/imap": 20,
+        "tangler/dropbox": 20,
+        "tangler/mollie": 20,
+        "tangler/pushover": 20
     },
     "platform": [
 
