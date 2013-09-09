@@ -1,0 +1,22 @@
+<tangler>
+    <autoload prefix="Tangler\Module\File" path="../File/src" />
+
+    <channel>
+        <key>file2tweet</key>
+        <label>File2Tweet</label>
+        <description>It sends filenames to Twitter, with a hash-tag</description>
+
+        <trigger class="Tangler\Module\File\NewFileTrigger">
+            <parameter key="dir">/tmp/tangler.in/</parameter>
+        </trigger>
+
+        <action class="Tangler\Module\Twitter\SendTweetAction">
+            <parameter key="oauth.accesstoken"></parameter>
+            <parameter key="oauth.accesstoken.secret"></parameter>
+            <parameter key="consumer.key"></parameter>
+            <parameter key="consumer.secret"></parameter>
+            <parameter key="message">Hello world, new file: {{filename}} #tangler</parameter>
+        </action>
+
+    </channel>
+</tangler>
