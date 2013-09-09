@@ -10,6 +10,9 @@
             <parameter key="dir">/tmp/tangler.in/</parameter>
         </trigger>
 
+        <!--
+            You can retrieve your oauth credentials on dev.twitter.com
+        -->
         <action class="Tangler\Module\Twitter\SendTweetAction">
             <parameter key="oauth.accesstoken"></parameter>
             <parameter key="oauth.accesstoken.secret"></parameter>
