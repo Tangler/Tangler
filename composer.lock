@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "31ba4c5cb115ff0884012b23590158b9",
+    "hash": "fe241e0f0f23167af394e80e9262c253",
     "packages": [
         {
             "name": "dropbox/dropbox-sdk",

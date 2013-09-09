@@ -3,7 +3,7 @@
     "description": "Tangler full application",
     "homepage": "http://www.github.com/tangler/tangler",
     "keywords": ["php", "tangler"],
-    "type": "library",
+    "type": "metapackage",
     "minimum-stability": "dev" ,
     "require": {
         "symfony/console": "2.4.*@dev",
@@ -17,6 +17,9 @@
         "tangler/pushover": "dev-master"
     },
     "require-dev": {
+    },
+    "config": {
+        "preferred-install": "dist"
     },
     "autoload": {
         "psr-0": {
