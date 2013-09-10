@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fe241e0f0f23167af394e80e9262c253",
+    "hash": "0e3628046591f56c283372d7c29bcbed",
     "packages": [
         {
             "name": "dropbox/dropbox-sdk",
@@ -42,6 +42,45 @@
                 "dropbox"
             ],
             "time": "2013-08-22 02:38:03"
+        },
+        {
+            "name": "j7mbo/twitter-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/J7mbo/twitter-api-php.git",
+                "reference": "96cc3503d2b4b8cfca6d2c3255529cf289120208"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/J7mbo/twitter-api-php/zipball/96cc3503d2b4b8cfca6d2c3255529cf289120208",
+                "reference": "96cc3503d2b4b8cfca6d2c3255529cf289120208",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "TwitterAPIExchange.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU Public License"
+            ],
+            "authors": [
+                {
+                    "name": "James Mallison",
+                    "homepage": "https://github.com/j7mbo/twitter-api-php"
+                }
+            ],
+            "description": "Simple PHP Wrapper for Twitter API v1.1 calls",
+            "homepage": "https://github.com/j7mbo/twitter-api-php",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "time": "2013-09-05 08:59:06"
         },
         {
             "name": "linkorb/mollie-sms-php",
@@ -936,6 +975,43 @@
             "time": "2013-09-07 18:52:56"
         },
         {
+            "name": "tangler/twitter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tangler/Twitter.git",
+                "reference": "680b38852ca93165a534e6b43338336826f9871f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tangler/Twitter/zipball/680b38852ca93165a534e6b43338336826f9871f",
+                "reference": "680b38852ca93165a534e6b43338336826f9871f",
+                "shasum": ""
+            },
+            "require": {
+                "j7mbo/twitter-api-php": "dev-master",
+                "phpunit/phpunit": "3.7.*@dev",
+                "tangler/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tangler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Twitter Module for Tangler",
+            "homepage": "http://www.github.com/Tangler/Twitter",
+            "keywords": [
+                "action",
+                "php",
+                "tangler",
+                "trigger",
+                "twitter"
+            ],
+            "time": "2013-09-08 12:18:33"
+        },
+        {
             "name": "zetacomponents/base",
             "version": "dev-master",
             "source": {
@@ -1090,7 +1166,8 @@
         "tangler/imap": 20,
         "tangler/dropbox": 20,
         "tangler/mollie": 20,
-        "tangler/pushover": 20
+        "tangler/pushover": 20,
+        "tangler/twitter": 20
     },
     "platform": [
 

@@ -14,7 +14,8 @@
         "tangler/imap": "dev-master",
         "tangler/dropbox": "dev-master",
         "tangler/mollie": "dev-master",
-        "tangler/pushover": "dev-master"
+        "tangler/pushover": "dev-master",
+        "tangler/twitter": "dev-master"
     },
     "require-dev": {
     },
